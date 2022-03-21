@@ -1,10 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+@media (min-width: 768px) {
+  .responsive-nav {
+    display: none;
+  }
 }
 
 body {
-  background-color: #f7f7e2;
+  background-color: #1a0b0c;
 }
 
 .container {
@@ -15,8 +23,10 @@ body {
 
 nav {
   padding: 1em;
-  background-color: #ebdcd0;
-  border-radius: 0 0 20px 20px;
+}
+
+h1 {
+  color: #4a4d4e;
 }
 
 .nav-flex {
@@ -38,10 +48,14 @@ nav {
 .nav-links a {
   padding: 2em 2.5em;
   text-decoration: none;
-  color: black;
+  color: #e2a528;
 }
 
 .nav-links a:visited {
-  color: black;
+  color: #e2a528;
+}
+
+.responsive-nav {
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
