@@ -18,7 +18,7 @@ Kenntnissen: NPM, Compoer, Smarty, Bootstrap, Git
 Hier sind einige Öffentliche Programmier Projekte
 
 - Diese Website
-- more comming soon
+- more coming soon
 
 ## Social Media
 
