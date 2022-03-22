@@ -1,42 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-// Theme: Red Dragon
-$backgroundColor: #1a0b0c;
-$primaryColor: #1a0b0c;
-$secondaryColor: #4a4d4e;
-$fontColor: #e2a528;
-
 // Grundlage
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
 }
 
 // Style
-
 body {
-  background-color: $backgroundColor;
+  background-color: var(--main-bg-color);
 }
 .container {
   margin: 0 auto;
   width: 80%;
   max-width: 1200px;
+  color: var(--font-color);
+  margin-bottom: 2em;
 }
 
 h1 {
-  color: $secondaryColor;
+  color: var(--secondary-color);
+  padding-top: 0.3em;
 }
 
 .responsive-nav {
-  padding: 0.6em;
-  color: $fontColor;
-  padding-top: 1.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 
   span {
     width: auto;
     height: auto;
-    margin: 2em;
   }
 }
 
@@ -47,31 +43,30 @@ h1 {
   flex-direction: column;
   padding: 1em;
 
-  height: auto;
-  transition: 1s;
-
   a {
     text-decoration: none;
-    color: $fontColor;
+    color: var(--font-color);
     transition: 0.5s;
     margin: 0.3em;
 
     &:visited {
-      color: #e2a528;
+      color: var(--font-color);
       transition: 0.5s;
     }
 
     &:hover {
-      color: #4a4d4e;
+      color: var(--secondary-color);
       transition: 0.5s;
     }
   }
 }
 
+.border-bottom {
+  border-bottom: 2px solid var(--font-color);
+}
+
 .display-none {
   display: none;
-  height: 0;
-  transition: 1s;
 }
 
 // repsonsive Var

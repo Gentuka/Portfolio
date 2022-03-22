@@ -9,21 +9,36 @@
     <script src="https://kit.fontawesome.com/6200172c46.js" crossorigin="anonymous"></script>
     <script src="/scripts/script.js"></script>
     <link rel="stylesheet" href="/css/style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/var.css">
+    <link rel="stylesheet" href="/css/toggleCheckbox.css">
+    <title>Gentuka</title>
 </head>
 <body>
-    <nav>
-        <div class="responsive-nav">
-            <span onclick="hamburger()">
-                <i id='hamburger' class="fa-solid fa-bars fa-2xl"></i>
-            </span>
+    <div class="container">
+        <nav>
+            <div class="thema">
+                <input type="checkbox" id="toggle" class="test" onclick="toggleThema()"/>
+                <label for="toggle"></label>
+            </div>
+            <div class="responsive-nav">
+            <h1>Gentuka</h1>
+                <span onclick="hamburger()">
+                    <i id='hamburger' class="fa-solid fa-bars fa-2xl">
+                    </i>
+                </span>
+            </div>
+            <div id='navItems'class="navItems display-none">
+                <a href="#">About Me</a>
+                <a href="#">Skills</a>
+                <a href="#">Works</a>
+                <a href="#">Social Media</a>
+            </div>
+        </nav>
+        <div id='border-bottom' class="border-bottom display-none">
         </div>
-        <div id='navItems'class="navItems display-none">
-            <a href="#">Test</a>
-            <a href="#">Test</a>
-            <a href="#">Test</a>
-            <a href="#">Test</a>
-        </div>
-    </nav>
+    </div>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ipsum, libero repudiandae, vero delectus autem fuga dolorum asperiores itaque sed consequuntur consequatur consectetur perspiciatis deserunt nam quas velit nobis fugit.
+    </div>
 </body>
 </html>
