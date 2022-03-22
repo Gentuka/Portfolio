@@ -6,20 +6,14 @@ $primaryColor: #1a0b0c;
 $secondaryColor: #4a4d4e;
 $fontColor: #e2a528;
 
-// repsonsive Var
-$breakpoint-table: 768px;
-
+// Grundlage
 * {
   padding: 0;
   margin: 0;
   font-family: "Roboto Mono", monospace;
 }
 
-@media (min-width: $breakpoint-table) {
-  .responsive-nav {
-    display: none;
-  }
-}
+// Style
 
 body {
   background-color: $backgroundColor;
@@ -30,32 +24,62 @@ body {
   max-width: 1200px;
 }
 
-nav {
-  padding: 1em;
-}
-
 h1 {
   color: $secondaryColor;
 }
 
-.nav-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.nav-links a {
-  padding: 2em 2.5em;
-  text-decoration: none;
+.responsive-nav {
+  padding: 0.6em;
   color: $fontColor;
+  padding-top: 1.6em;
 
-  &:visited {
-    color: $fontColor;
+  span {
+    width: auto;
+    height: auto;
+    margin: 2em;
   }
 }
 
-.responsive-nav {
-  //   display: none;
-  background-color: green;
+.navItems {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+
+  height: auto;
+  transition: 1s;
+
+  a {
+    text-decoration: none;
+    color: $fontColor;
+    transition: 0.5s;
+    margin: 0.3em;
+
+    &:visited {
+      color: #e2a528;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      color: #4a4d4e;
+      transition: 0.5s;
+    }
+  }
+}
+
+.display-none {
+  display: none;
+  height: 0;
+  transition: 1s;
+}
+
+// repsonsive Var
+$breakpoint-table: 768px;
+
+// Desktop Media Query
+@media only screen and (min-width: $breakpoint-table) {
+  .responsive-nav {
+    display: none;
+  }
 }
