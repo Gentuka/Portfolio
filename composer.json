@@ -1,0 +1,12 @@
+{
+    "config": {
+	    "vendor-dir": "htdocs/vendor"
+    },
+    "require": {
+        "smarty/smarty": "^4.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.0",
+        "phpstan/phpstan": "^1.7"
+    }
+}
