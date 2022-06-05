@@ -5,6 +5,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'VT323', monospace;
+	color: var(--font);
 }
 
 /*
@@ -75,6 +76,30 @@ a {
 		border-bottom: 2px solid var(--primary);
 	}
 
+	.bottom-block {
+		float:right;
+		margin-right: 15px;
+
+		#light {
+			transition: 1s;
+			cursor: pointer;
+
+			&:hover {
+				font-size: 1.4em;
+				transition: 1s;
+			}
+		}
+
+		#dark {
+			transition: 1s;
+			cursor: pointer;
+			&:hover {
+				font-size: 1.4em;
+				transition: 1s;
+			}
+		}
+	}
+
 	.right-corner {
 		height: 100%;
 		width: 70px;
@@ -107,11 +132,10 @@ a {
 
 		.code-text {
 			font-size: 3em;
-			color: var(--font);
 			
 			.code-text-marked {
 				background-color: black;
-				animation: textMarked 2s infinite;
+				animation: textMarked 1.1s infinite;
 			}
 
 			@keyframes textMarked {
