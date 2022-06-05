@@ -96,8 +96,18 @@ a:visited {
 }
 
 .frame .bottom-block {
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-right: 15px;
+  margin-left: 15px;
+}
+
+.frame .bottom-block #skip {
+  cursor: pointer;
 }
 
 .frame .bottom-block #light {
@@ -153,6 +163,15 @@ a:visited {
   transition: 1s;
 }
 
+.frame #clearDot {
+  background-color: tomato;
+  cursor: pointer;
+}
+
+.frame #clearDot:hover {
+  background-color: var(--secondary);
+}
+
 .frame .content {
   height: 90%;
   margin: auto;
@@ -173,6 +192,7 @@ a:visited {
 
 .frame .content .code-text {
   font-size: 3em;
+  max-width: 70%;
 }
 
 .frame .content .code-text .code-text-marked {

@@ -77,8 +77,14 @@ a {
 	}
 
 	.bottom-block {
-		float:right;
+		display: flex;
+		justify-content: space-between;
 		margin-right: 15px;
+		margin-left: 15px;
+
+		#skip {
+			cursor: pointer;
+		}
 
 		#light {
 			transition: 1s;
@@ -119,6 +125,16 @@ a {
 				background-color: var(--secondary);
 				transition: 1s;
 			}
+
+		}
+	}
+
+	#clearDot {
+		background-color: tomato;
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--secondary);
 		}
 	}
 
@@ -132,6 +148,7 @@ a {
 
 		.code-text {
 			font-size: 3em;
+			max-width: 70%;
 			
 			.code-text-marked {
 				animation: textMarked 1.1s infinite;
