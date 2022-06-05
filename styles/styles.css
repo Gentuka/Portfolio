@@ -176,7 +176,6 @@ a:visited {
 }
 
 .frame .content .code-text .code-text-marked {
-  background-color: black;
   -webkit-animation: textMarked 1.1s infinite;
           animation: textMarked 1.1s infinite;
 }
@@ -189,10 +188,10 @@ a:visited {
     background-color: var(--background);
   }
   50% {
-    background-color: var(--secondary);
+    background-color: var(--marked);
   }
   100% {
-    background-color: var(--secondary);
+    background-color: var(--marked);
   }
 }
 
@@ -204,10 +203,10 @@ a:visited {
     background-color: var(--background);
   }
   50% {
-    background-color: var(--secondary);
+    background-color: var(--marked);
   }
   100% {
-    background-color: var(--secondary);
+    background-color: var(--marked);
   }
 }
 /*# sourceMappingURL=styles.css.map */

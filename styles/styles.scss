@@ -134,15 +134,14 @@ a {
 			font-size: 3em;
 			
 			.code-text-marked {
-				background-color: black;
 				animation: textMarked 1.1s infinite;
 			}
 
 			@keyframes textMarked {
 				0% {background-color: var(--background);}
 				49% {background-color: var(--background);}
-				50% {background-color: var(--secondary);}
-  				100% {background-color: var(--secondary);}	
+				50% {background-color: var(--marked);}
+  				100% {background-color: var(--marked);}	
 			}
 		}
 	}
